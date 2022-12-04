@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Bace Registration</h2>
+    <!-- It means that the form will get submit to backend.php -->
+    <form action="backend.php">
+        <div>
+            <!-- The backend will take value corresponding to the name -->
+            
+            <!-- label is used so that if we click on the name then the box get activated -->
+
+            <!-- id of name and for of label should be same -->
+            <label for="name">Name : </label>
+            <input type="text" name="myName" id="name">
+        </div>
+        <br>
+        <div>
+            <label for="role">Role : </label>
+            <input type="text" name="myRole" id="role">
+        </div>
+        <br>
+        <div>
+            <label for="emailID">Email : </label>
+            <input type="email" name="myEmail"  id="emailID">  
+        </div>
+        <br>
+        <div>
+            <label for="date">Date of birth : </label>
+            <input type="date" name="myDate" id="date">
+        </div>
+        <br>
+        <div>
+            <label for="bonus">Bonus : </label>
+            <input type="number" name="myNumber" id="bonus">
+        </div>
+        <br>
+        <div>
+            <!-- checked is used so that when the form is filled the tick is already filled -->
+            <label for="eligibility">Are you Eligible ? : </label>
+            <input type="checkbox" name="myEligibility" checked id="eligibility">
+        </div>
+        <br>
+        <div>
+            <!-- radio buttons are used so that we can select any one -->
+            Gender : Male <input type="radio" name="myGender" id=""> Female <input type="radio" name="myGender" id="">
+        </div>
+        <br>
+        <div>
+            <label for="write">Write about Yourself : <br></label>
+            <textarea name="myText" id="write" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <!-- selected is used to select one option by default in the form -->
+            <label for="car">Car :</label>  
+            <select name="myCar" id="car">
+                <option value="Alto">Alto</option>
+                <option value="Indica"  selected>Indica</option>
+                <option value="Maruti">Maruti</option>
+            </select>
+        </div>
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+    </form>
+</body>
+</html>
