@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+.outer-box{
+    /* vw->viewport width
+    vh->viewport-height; */
+    width: 100vw;
+    height: 100vh;
+    /* from bottom right to 'Mentioned in function' */
+    /* color will change from 1st to second */
+    background: linear-gradient(to top left , #3ed8ff, #a8f5ff);
+}
+
+/* box-shadow : h-offset v-offset h-offset v-offset blur spread color  */
+/* box shadow is used to give shadow to the box */
+/* h-offset -> used to give shadow at right side of box . If you want shadow at the left side then you can put the value of h-offset as negative*/
+/* v-offset -> It is used to give shadow to bottom side of the box. If you want to give shadow at the top side then put the value of v-offset as -ve */
+/* blur(optional) -> It is used to give the intensity of blur effect */
+/* spread(optional) -> It is used to give length to the shadow. */
+/* color(optional) -> It is used to give color to shadow. */
+
+.inner-box{
+    width: 400px;
+    margin: 0px auto;
+    position: relative;
+    top: 30%;
+    padding: 20px 40px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px #256e9e;
+}
+
+.signup-header h1{
+    font-size: 2.5em;
+    color: #212121;
+}
+
+.signup-header p{
+    font-size: 0.8em;
+    color:#555;
+}
+
+.signup-body{
+    margin:20px 0px;
+}
+
+.signup-body p{
+    margin: 10px 0px;
+}
+
+.signup-body p label{
+    display: block;
+    font-weight: bold;
+}
+
+.signup-body p input{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #cccc;
+    border-radius: 4px;
+    font-size: 1em;
+    margin-top: 4px;
+}
+
+.signup-body p input[type="submit"]{
+    background-color: #3498db;
+    border:none;
+    color: white;
+    cursor: pointer;
+}
+
+.signup-body p input[type="submit"]:hover{
+    background-color: #256e9e;
+}
+
+.signup-footer p{
+    color: #555;
+    text-align: center;
+}
+
+.signup-footer p a{
+    color: #256e9e;
+}
