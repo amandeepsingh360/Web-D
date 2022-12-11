@@ -12,7 +12,7 @@
     vh->viewport-height; */
     width: 100vw;
     height: 100vh;
-    /* from bottom right to 'Mentioned in function' */
+    /* from 'opposite side of the side mentioned in function' to 'Mentioned in function' */
     /* color will change from 1st to second */
     background: linear-gradient(to top left , #3ed8ff, #a8f5ff);
 }

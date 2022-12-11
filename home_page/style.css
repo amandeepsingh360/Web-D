@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+body{
+    margin:0px;
+    padding: 0px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    /* background: url('backgroundimage.jpeg');   */
+    background: url('darkblue.png');
+    overflow: auto;
+    /* background-repeat: no-repeat; 
+    background-size:100vw 100vh; */
+}
+
+.left{
+    display: inline-block;
+    /* border: 3px solid red; */
+    position: absolute;
+    top: 20px;
+    left: 60px;
+}
+
+.left img{   
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+}
+
+.left div{
+    font-family: 'La Belle Aurore', cursive;  
+    text-align: center; 
+    font-size: 1.2rem;
+}
+
+/* margin:auto only works with block elements with width adjusted */
+.mid{
+    display: block; 
+    width:33%;
+    position: sticky;   
+    margin: 30px auto;
+}
+
+
+.navbar li{
+    display: inline-block;
+}
+
+.navbar li a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    padding: 34px 10px;
+}
+
+.navbar li a:hover{
+    text-decoration: underline;
+    color: rgb(197, 129, 129);
+}
+
+.right{ 
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    display: inline-block;
+}
+.btn{
+    background-color: rgb(4, 170, 109);
+    color: white;
+    margin : 10px 20px; 
+    display: inline-block;
+    width: 100px;
+    height: 50px;  
+    padding: 10px;  
+    border-radius: 40px;
+}
+
+.btn:hover{
+    background-color: rgb(7, 97, 64);
+    cursor: pointer;
+}
+
+.container{
+    margin: 190px 120px;
+    padding: 10px 100px;
+    width: 50%;
+    border: 3px solid white;
+    border-radius: 30px;
+}
+
+.container h3{
+    margin: auto;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    width: 184px;
+}
+.form-group label{
+    text-align: center;
+}
+.form-group input{
+    display: block;
+    background-color: white;
+    text-align: center;
+    margin: 10px auto;
+    padding: 4px 6px;
+    width: 330px;
+    height: 30px;
+    border: 2px solid black;
+    font-size: 20px;
+    border-radius: 6px;
+}
+
+.form-group button{
+    display: block;
+    width: 47%;
+    margin: 15px auto;
+    height: 32px;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    background-color: rebeccapurple;
+}
+
+.form-group button:hover{
+    background-color: rgb(73, 37, 109);
+    cursor: pointer;
+}
