@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <style>
+        /* universal selector */
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            border: 0;
+        }
+        body{
+            background-color: rgb(231 175 231);
+        }
+        .container{
+            background-color: #81ebf3;
+            /* height: 100px;
+            width: 700px; */
+            border: 3px solid red;
+            /* border-color: red;
+            border-style: solid;
+            border-width: 3px; */
+            border-radius: 23px;
+            /* padding : 19px; */
+            /* We can set individual padding/margin by this */
+            /* padding-left: 19px;
+            padding-right: 19px;
+            padding-top: 19px;
+            padding-bottom: 19px; */
+
+            /* We can set individual padding/margin by this shortcut */
+            /* padding/margin: top right bottom left */
+            /* padding: 19px 19px 19px 19px; */
+
+            /* We use this to change the padding by keeping top and bottom padding same, left and right padding same */
+            /* padding/margin: y(top/bottom) x(left/right) */
+            padding: 19px 19px;
+            margin: 34px 34px;
+            
+            /* usually, when we change some property, it changes and make other property also change which leads to some problem. So, we use box-sizing */
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="first">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae itaque obcaecati minima, quod rem facere quos voluptatibus quaerat incidunt reprehenderit, adipisci enim modi.</p>
+    </div>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="second">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae itaque obcaecati minima, quod rem facere quos voluptatibus quaerat incidunt reprehenderit, adipisci enim modi.</p>
+    </div>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="third">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae itaque obcaecati minima, quod rem facere quos voluptatibus quaerat incidunt reprehenderit, adipisci enim modi.</p>
+    </div>
+</body>
+</html>

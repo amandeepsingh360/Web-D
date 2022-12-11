@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders and Backgrounds</title>
+    <style>
+        #firstPara{
+            background-color: yellow;
+            height: 100px;
+            width: 455px;
+
+            /* border-color: blueviolet;
+            border-style: solid;
+            border-radius: 11px;*/ /* used for curving the corner */
+            border: 11px solid blueviolet;
+        }
+        #secondPara{
+            background-color: aqua;
+            height: 100px;
+            width: 455px;
+
+            border-top: 2px solid green;
+            border-left: 2px solid yellow;
+            border-right: 2px solid blue;
+            border-bottom: 2px solid red;
+
+            border-top-left-radius: 5px;
+            border-top-right-radius: 7px;
+            border-bottom-left-radius: 9px;
+            border-bottom-right-radius: 10px;
+        }
+        #thirdPara{
+            height: 600px;
+            width: 600px;
+            background-image: url('https://images.pexels.com/photos/1961778/pexels-photo-1961778.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=252&fit=crop&h=408');
+            background-repeat: no-repeat;
+            border: 10px solid yellow;
+            background-size: 100px; 
+            /* used to change size of image */
+            /* background-repeat: repeat-x;
+            image will repeat in x
+            background-repeat: repeat-y;
+            image will repeat in y  */
+
+            /* y-parameter cannot become top  */
+            /* background-position: center center; */
+            background-position: top center;
+        }
+    </style>
+</head>
+<body>
+    <h3>Borders and Backgrounds</h3>
+    <p id="firstPara">This is my first paragraph</p>
+    <p id="secondPara">This is my second paragraph</p>
+    <p id="thirdPara">This is my third paragraph</p>
+</body>
+</html>

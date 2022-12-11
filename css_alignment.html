@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Ubuntu&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Ubuntu&display=swap'); </style>
+    <!-- There are 4 types of overflow properties:-
+    1. Visible -> Default property.
+    2. Hidden -> The content which is overflowing will hide.
+    3. Scroll -> Scroll bar will come in the container.
+    4. Auto -> According to size of content in container, scroll bar will come. -->
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            width: 900px;
+            border: 3px solid purple;
+            /* auto is used to align center  */
+            margin: 33px auto;
+            font-family: 'Lato', sans-serif;
+            font-family: 'Ubuntu', sans-serif;
+        }
+        .item{
+            border:3px solid grey;
+            margin:12px 3px;
+            padding:12px 3px;
+            background-color: rgb(235, 205, 205);
+        }
+        #fruit{
+            float: left;
+            width: 48%;
+        }
+        #computer{
+            float: left;
+            width: 48%;
+            
+        }
+        #stationary{
+            /* float: left; */
+            width: 100%;
+            clear:both;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="fruit" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitspara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, magnam! Non inventore quis voluptatibus, distinctio ipsa optio veritatis. Nostrum, quam error. Omnis quisquam deserunt doloremque ullam ad maxime ipsum, saepe deleniti impedit aliquid eius?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae recusandae eius laborum reiciendis quidem consectetur! Deserunt cupiditate ex placeat eveniet error exercitationem suscipit. Totam nemo expedita fuga eveniet officia quisquam.</p>
+        </div>
+        <div id="computer" class="item">
+            <h3>Computer</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex adipisci et doloremque magnam iusto ut, cupiditate suscipit veritatis reiciendis, a dolore, assumenda sit hic nulla eum! Dignissimos, exercitationem! Atque expedita obcaecati vitae alias voluptates!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae recusandae eius laborum reiciendis quidem consectetur! Deserunt cupiditate ex placeat eveniet error exercitationem suscipit. Totam nemo expedita fuga eveniet officia quisquam.</p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae recusandae eius laborum reiciendis quidem consectetur! Deserunt cupiditate ex placeat eveniet error exercitationem suscipit. Totam nemo expedita fuga eveniet officia quisquam.</p>
+        </div>
+    </div>
+</body>
+</html>

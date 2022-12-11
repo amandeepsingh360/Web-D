@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <!-- In inline element, we can't set width and height of border.
+    In block element, we can set the width and height of border but it takes all the space.
+    Inline-block element have both the flavours, as we can set width and height of border and also make them in one line. -->
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        header{
+            border: 2px solid red;
+        }
+        img{
+            display : block;
+            height: 200px;
+            width: 200px;
+            margin: auto;
+        }
+        h3{
+            margin: 0px;
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .box{
+            border: 2px solid grey;
+            background-color: rgb(184, 177, 177);
+            margin : 4px 0px;
+            padding: 20px; 
+            display: inline-block;
+            width: 33%;
+        }
+    </style>
+</head>
+<body>
+    <header class="top">
+        <img src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_960_720.jpg" alt="">
+        <h3>Welcome to Aman's Blog</h3>
+    </header>
+    <div class="container">
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, porro, vitae quibusdam ab numquam a nisi minus temporibus esse sit ducimus praesentium laudantium molestias! Nisi praesentium facere officiis velit ullam minima temporibus perspiciatis, eum, tenetur exercitationem, accusamus omnis aut natus!</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, porro, vitae quibusdam ab numquam a nisi minus temporibus esse sit ducimus praesentium laudantium molestias! Nisi praesentium facere officiis velit ullam minima temporibus perspiciatis, eum, tenetur exercitationem, accusamus omnis aut natus!</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, porro, vitae quibusdam ab numquam a nisi minus temporibus esse sit ducimus praesentium laudantium molestias! Nisi praesentium facere officiis velit ullam minima temporibus perspiciatis, eum, tenetur exercitationem, accusamus omnis aut natus!</p>
+        </div>
+    </div>
+</body>
+</html>
