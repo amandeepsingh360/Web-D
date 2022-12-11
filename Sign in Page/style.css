@@ -31,9 +31,13 @@
     position: relative;
     top: 30%;
     padding: 20px 40px;
-    background-color: white;
+    /* background-color: white; */
+    /* it is used to give blur effect to the box and the number written in blur is the intensity of blur effect */
+    backdrop-filter: blur(8px);
+    background: linear-gradient(to top left,#ffffffff,#ffffff33);
     border-radius: 8px;
     box-shadow: 2px 2px 5px #256e9e;
+    z-index: 1;
 }
 
 .signup-header h1{
@@ -86,4 +90,22 @@
 
 .signup-footer p a{
     color: #256e9e;
+}
+
+.circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background: linear-gradient(to top right,#ffffff33,#ffffffff);
+    position: absolute;
+}
+
+.c1{
+    top:100px;
+    left:40px; 
+}
+
+.c2{
+    bottom: 200px;
+    right: 50px;
 }
