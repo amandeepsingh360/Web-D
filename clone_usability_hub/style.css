@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* it is used to define variables for whole css sheet, these variables can be used by any class or ID. */
+:root{
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+    --padding-inline-section: 20px;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-text-color);
+}
+
+h1{
+    font-size: 3em;    
+}
+
+h2{
+    font-size: 2em;    
+}
+
+h3{
+    font-size: 1.5em;    
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25em;
+    color: var(--secondary-text-color);
+    line-height: 1.8em;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul{
+    list-style: none;
+}
+
+.hover-links{
+    color: var(--primary-text-color);
+}
+
+.hover-links:hover{
+    color: var(--accent-color);
+    transition: 0.2s ease-out;
+    /* In 0.2 sec, the colour will go off because of ease-out */
+}
+
+.primary-button{
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: white !important;
+    padding: 12px 24px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+}
+
+.primary-button:hover{
+    background-color: var(--accent-color-dark);
+    transition: 0.2s ease-out;
+}
+
+.secondary-button{
+    border: 0.5px solid var(--secondary-text-color);
+    border-radius: 6px;
+    font-weight: 700;
+    padding: 12px 24px;
+}
+
+.secondary-button:hover{
+    transition: 0.2s ease-out;
+    border: 0.5px solid var(--accent-color);
+}
+/* height is automatically set according to the content */
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.small-bold-text{
+    font-size: 0.8em;
+    font-weight: 700;
+}
+
+.top-banner{
+    height: 55px;
+    background-image: url('./assets/asset\ 30.png');
+    background-color: #4fb3d4;
+    background-size: 300px;
+}
+
+.container{
+    max-width: 1300px;
+    /* It is used to give margin to both left and right simultaneously. */
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+}
+
+.banner-text{
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+}
+
+.banner-text a{
+    font-family: sans-serif;
+    color: white;
+    font-size: 0.8em;
+}
+
+.main-nav{
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+.company-logo img{ 
+    /* margin-top: 30px; */
+    width: 200px;
+}
+
+.nav-links{
+    flex-basis: 730px;
+}
+
+.nav-links ul{
+    justify-content: end;
+    gap: 40px;
+}
+
+/* header section */
+
+.header{
+    padding: 50px var(--padding-inline-section) 0;
+}
+
+.header-section{
+    justify-content: center;
+    gap: 50px;
+}
+
+.header-left{
+    max-width: 40vw;
+}
+
+.header-left h1{
+    margin-top: 60px;
+}
+
+.header-right img{
+    margin-top: 75px;
+    width: 650px;
+    height: 470px;
+}
+
+.header-section p{
+    margin-top: 20px;
+}
+
+.header-section a{
+    margin-top: 30px;
+}
+
+/* companies section */
+
+.companies-header{
+    font-size: 1.1em;
+    line-height: 4em;
+    text-align: center;
+    /* margin-block is used to give margin to both top and bottom simultaneously. */
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.logos{     
+    justify-content: space-between; 
+    flex-wrap: wrap;
+}
+
+.logo{
+    height: 50px;
+}
+
+.go-daddy{
+    height: 35px;
+}
+
+/* features section */
+
+.feature-section{
+    background-image: url(./assets/asset\ 32.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100vh;
+    margin-top: 85px;
+    padding: 60px var(--padding-inline-section) 0;
+}
+
+.features-header{
+    text-align: center;
+}
+
+.features-header a{
+    color: var(--primary-text-color);
+    margin-top: 15px;
+}
+
+.feature-section a:hover{
+    color: var(--accent-color);
+}
+
+.features-area{
+    margin: 50px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+
+.features-card{
+    flex-direction: column;
+    gap: 10px;
+    max-width: 30%;
+    text-align: center;
+}
+
+.features-card img{
+    width: 45px;
+}
+
+.features-card a{
+    color: var(--primary-text-color); 
+}
+
+/* big feature section */
+
+.big-feature-section{
+    padding: 65px var(--padding-inline-section) 100px;
+}
+
+.big-feature-container{
+    padding-right: 0px;
+    padding-left: 10px;
+    gap: 100px;
+    margin-left: 65px;
+}
+
+.feature-img img{
+    width: 105%;
+}
+
+.features-desc{
+    height: 60vh;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    justify-content: start;
+}
+
+.features-desc h4{
+    font-size: 1.3em;
+}
+
+.features-desc p{
+    font-size: 1.4em;
+}
+
+.review-small-img img{
+    width: 43%;
+}
+
+.review-text{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--primary-text-color);
+    width: 420px;
+}
+
+.person-desc{
+    flex-direction: row;
+    gap: 10px;
+}
+
+.person-photo img{
+    width: 55px;
+}
+
+.person-prop{
+    align-items: start;
+    flex-direction: column;
+}
+
+.person-prop p{
+    font-size: 15px;
+}
+
+.feature-margin{
+    margin-top: 50px;
+}
+/* examples section */
+
+.examples-section{
+    text-align: center;
+}
+
+.examples-section h1{
+    font-size: 2.5em;
+}
+
+.examples-area:nth-child(2){
+    justify-content: space-between;
+    margin-block: 30px;
+}
+
+.examples-card{
+    width: 23%;
+    position: relative;
+    min-height: 300px;
+    background: black;
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)), url(./assets/asset\ 34.jpeg);
+    background-size: cover;
+}
+
+.examples-card:hover{
+    box-shadow: 0 0 10px #888;
+    transition: 0.2s ease-out;
+}
+
+.examples-card:nth-child(2){
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)), url(./assets/asset\ 35.jpeg);
+    background-size: cover;
+}
+
+.examples-card:nth-child(3){
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)), url(./assets/asset\ 36.jpeg);
+    background-size: cover;
+}
+
+.examples-card:nth-child(4){
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)), url(./assets/asset\ 37.jpeg);
+    background-size: cover;
+}
+
+.card-text{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: white;
+}
+
+/* cta section */
+
+.cta-section{
+    padding: 120px var(--padding-inline-section) 80px;
+    background-color: #183b54;
+}
+
+.cta-section-container{
+    flex-direction: column;
+    gap: 30px;
+    color: white;
+}
+
+.cta-section-container p{
+    color: white;
+    margin-top: 20px;
+}
+
+/* footer */
+
+footer{
+    padding-block: 80px;
+    background-color: #ebf2fa;
+}
+.link-column{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.footer-container{
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+/* sub footer */
+
+.sub-footer{
+    background-color: #b9cde4;
+    padding: var(--padding-inline-section);
+}
+
+.subfooter-container{
+    justify-content: center;
+    gap: 30px;
+}

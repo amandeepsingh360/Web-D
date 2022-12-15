@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        .container{
+            /* It is used to initialize flex container. */
+            display: flex;
+            height: 544px;
+            /* gap: 10px;(It is the shortcut property for row-gap and column-gap to write simultaneously) */
+
+            /* row-gap: 10px;
+            
+            column-gap: 10px; */
+            
+            width: 100%;
+            
+            border: 2px solid black;
+            
+            /* flex-direction: row;(default) */
+            
+            /* It will flow in column 
+            flex-direction: column; */
+            
+            /* The order of boxes will reverse in row
+            flex-direction: row-reverse; */
+            
+            /* The order of boxes will reverse in column
+            flex-direction: column-reverse; */
+            
+            /* flex-wrap: nowrap;(default) */
+
+            /* flex-wrap: wrap;(It is used to wrap the content in next row) */
+
+            /* It wrap in opposite direction.
+            flex-wrap: wrap-reverse; */
+
+            /* flex-flow: flex-direction flex-wrap;  */
+            /* flex-flow: row-reverse wrap; */
+
+            /* It aligns the content to center of main axis */
+            justify-content: center;
+
+            /* It gives space between two blocks */
+            justify-content: space-between;
+            
+            /* It gives equal between all the boxes, starting and ending also */
+            justify-content: space-evenly;
+            
+            /* It gives same space around one box. Like margin of one box */
+            justify-content: space-around;
+            
+            /* It centers the boxes across cross-axis */
+            align-items: center;
+
+            /* It makes the boxes at last in cross-axis */
+            align-items: flex-end;
+
+            /* It makes the boxes at start in cross-axis */
+            align-items: flex-start;
+            
+            align-items: center;
+            
+            /* By default, align-items is stretch, means the height of box stretch fully;  */
+            /* align-items: stretch; */
+        }
+        .item{
+            width: 200px;
+            height: 200px;
+            background-color: tomato; 
+            border: 2px solid green;
+            margin: 10px;
+            padding: 3px;
+        }
+/* Value of order decreases -> box goes at end  */
+        #item-1{
+            order: 1;
+            flex-grow: 1;
+        }
+        /* flex-grow(default-0) -> when we increases the size of the screen, then the box grows according to the value of flex-grow */
+
+        /* similarly flex-shrink(default-1) -> when we decreases the size of screen, then the box shrinks according to the value of flex-shrink. */
+
+        /* flex-basis -> Initial width in the direction of the main axis  */
+
+        #item-2{
+            flex-basis: 400px;
+        }
+
+        /* flex : flex-grow flex-shrink flex-basis */
+        
+        /* align-self -> children align according to cross-axis */
+        #item-3{
+            align-self: flex-start;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox Tutorial</h1>
+    <div class="container">
+        <div class="item" id="item-1">First box</div>
+        <div class="item" id="item-2">Second box</div>
+        <div class="item" id="item-3">Third box</div>
+        <div class="item" id="item-4">Fourth box</div>
+        <div class="item" id="item-5">Fifth box</div>
+        <div class="item" id="item-6">Sixth box</div>
+    </div>
+</body>
+</html>

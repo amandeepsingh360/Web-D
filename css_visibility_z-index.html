@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and Z-index</title>
+    <style>
+        /* types of visibility :-
+        1. visible -> by default.
+        2. hidden -> it hides the box but the space occupied by the container remains at the place.
+        Note -> display:none hides the box also the space where it was present.
+        This is the difference between visibility:hidden and display:none.  */
+        
+        /* Z-index only works with only position having absolute, relative, fixed and sticky. It doesnot works with static position(or default position). */
+        
+        /* more Z-index, more above the plane */
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+        }
+        #box-1{
+            background-color: red;
+        }
+        #box-2{
+            background-color: green;
+        }
+        #box-3{
+            background-color: blue;
+        }
+        #box-4{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box-1"></div>
+    <div class="box" id="box-2"></div>
+    <div class="box" id="box-3"></div>
+    <div class="box" id="box-4"></div>
+</body>
+</html>
