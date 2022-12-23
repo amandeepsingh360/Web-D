@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <!-- Grid Parent Properties:- -->
+    <!-- 1. gap :- It gives space between the children of the container.
+    (row-gap,column-gap)
+    Ex:- gap:15px;
+    Ex:- row-gap:15px;
+    Ex:- column-gap:15px; -->
+    
+    <!-- 2. grid-template-columns :- It is used to define width of columns.
+    Ex. grid-template-columns:200px 200px (It will divide our children into two columns with width 200px).
+        grid-template-columns:1fr 1fr 1fr 1fr (It will divide our columns into four parts having equal width as 1 fraction)
+        grid-template-columns:repeat(4,1fr) (Does the same as above).
+        grid-template-columns: auto auto (It will give width automatically. Here it will be 50%). -->
+    
+    <!-- 3. grid-template-rows:-It is used to give height to the rows.
+    Same operations shown above -->
+
+    <!-- 4. grid-auto-rows -> It will automatically define height for those rows which are not defined by us with grid-template-rows. -->
+    
+    <!-- 5. justify-content -> It is used to align our children in horizontal axis(main axis).-->
+
+    <!-- 6. align-content -> It is used to align our children in vertical axis(cross-axis). -->
+    
+    <!-- 7. align-items -> It aligns the items in their small containers. -->
+
+    <!-- Grid Children Properties -->
+    <!-- 1. justify-self -> It will align the content in main-axis in small box.
+
+    2. align-self -> It will align content in cross-axis.
+
+    3. grid-column -> It helps us to make our box take the required space.
+    Ex. grid-column:1(start index) / 3(end index)
+        grid-column:1/span 2 (same as above)
+
+    4. grid-row -> It is used in row(similar to grid-column).
+
+    5. grid-area -> row-start-index/column-start-index/row-end-index/column-end-index -->
+    
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            display: grid;
+            gap: 10px;
+            /* border: 2px solid red;
+            grid-template-columns: 30% 70%;
+            grid-template-rows: auto auto; */
+            /* (It will give height to first two rows) */
+            grid-template-areas:"hdr hdr hdr hdr"
+                                "sbr main main main"
+                                "sbr main main main"
+                                "ftr ftr ftr ftr";
+        }
+        .box{
+            border: 2px solid green;
+            padding: 12px;
+        }
+        #box-1{
+            grid-area: hdr;
+        }
+        #box-2{
+            grid-area: sbr;
+        }
+        #box-3{
+            grid-area: main;
+        }
+        #box-4{
+            grid-area: ftr;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box-1">box-1</div>
+        <div class="box" id="box-2">box-2</div>
+        <div class="box" id="box-3">box-3</div>
+        <div class="box" id="box-4">box-4</div>
+        <!-- <div class="box" id="box-5">box-5</div>
+        <div class="box" id="box-6">box-6</div>
+        <div class="box" id="box-7">box-7</div>
+        <div class="box" id="box-8">box-8</div>
+        <div class="box" id="box-9">box-9</div>
+        <div class="box" id="box-10">box-10</div> -->
+    </div>
+</body>
+</html>
