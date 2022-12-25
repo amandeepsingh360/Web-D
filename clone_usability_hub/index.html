@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>  
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media_queries.css">
 </head>
 <body>
     <!-- top-banner -->
@@ -23,7 +24,7 @@
             <a href="#" class="company-logo">
                 <img src="./assets/asset 1.png" alt="company logo">
             </a>
-            <div class="nav-links flex">
+            <div class="nav-links flex" id="nav-links">
                 <ul class="flex">
                     <li><a href="#" class="hover-links">Product</a></li>
                     <li><a href="#" class="hover-links">Pricing</a></li>
@@ -33,6 +34,9 @@
                     <li><a href="#" class="hover-links primary-button">Sign up</a></li>
                 </ul>
             </div>
+            <a href="#" class="nav-toggle hover-links" id="nav-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </a>
         </div>
     </nav>
 
@@ -130,24 +134,26 @@
                     Design professionals 
                 </h2>
                 <p>Test interfaces, interaction flows, iconography and more, to help you create intuitive and delightful experiences for your users.</p>
-                <div class="review-small-img flex">
-                    <img src="./assets/asset 19.png" alt="Chart Mogul">
-                </div>
-                <div class="review-text">The navigation test is god's gift to UI designers, it probably has the best power-to-simplicity ratio of any software, ever.</div>
-                <div class="person-desc flex">
-                    <div class="person-photo">
-                        <img src="./assets/asset 20.png" alt="Error ">
+                <div class="review">
+                    <div class="review-small-img flex">
+                        <img src="./assets/asset 19.png" alt="Chart Mogul">
                     </div>
-                    <div class="person-prop flex">
-                        <h4>
-                            Nick Franklin
-                        </h4>
-                        <p>Chief Executive Officer</p>
+                    <div class="review-text">The navigation test is god's gift to UI designers, it probably has the best power-to-simplicity ratio of any software, ever.</div>
+                    <div class="person-desc flex">
+                        <div class="person-photo">
+                            <img src="./assets/asset 20.png" alt="Error ">
+                        </div>
+                        <div class="person-prop flex">
+                            <h4>
+                                Nick Franklin
+                            </h4>
+                            <p>Chief Executive Officer</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="big-feature-container container flex" style="flex-direction: row-reverse; gap: 40px; margin-top: 50px;">
+        <div class="big-feature-container container flex">
             <div class="feature-img">
                 <img src="./assets/asset 21.png" alt="">
             </div>
@@ -159,28 +165,30 @@
                     Marketers 
                 </h2>
                 <p>Fine-tune landing pages, messaging, and creative, helping you optimise conversion rates on marketing campaigns and product launches.</p>
-                <div class="review-small-img flex">
-                    <img src="./assets/asset 22.png" alt="Chart Mogul">
-                </div>
-                <div class="review-text">We use UsabilityHub tests to help us make decisions for various projects. From web and mobile design to marketing activities.</div>
-                <div class="person-desc flex">
-                    <div class="person-photo">
-                        <img src="./assets/asset 23.png" alt="Error">
+                <div class="review">
+                    <div class="review-small-img flex">
+                        <img src="./assets/asset 22.png" alt="Chart Mogul">
                     </div>
-                    <div class="person-prop flex">
-                        <h4>
-                            Rick van de Ven
-                        </h4>
-                        <p>Digital Marketing Analyst</p>
+                    <div class="review-text">We use UsabilityHub tests to help us make decisions for various projects. From web and mobile design to marketing activities.</div>
+                    <div class="person-desc flex">
+                        <div class="person-photo">
+                            <img src="./assets/asset 23.png" alt="Error">
+                        </div>
+                        <div class="person-prop flex">
+                            <h4>
+                                Rick van de Ven
+                            </h4>
+                            <p>Digital Marketing Analyst</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="big-feature-container container flex" style="margin-top: 80px;">
+        <div class="big-feature-container container flex">
             <div class="feature-img">
                 <img src="./assets/asset 24.png" alt="">
             </div>
-            <div class="features-desc flex" style="height: 75vh;">
+            <div class="features-desc flex features-desc-third">
                 <h4>
                     Effortless validation for
                 </h4>
@@ -188,19 +196,22 @@
                     Product managers
                 </h2>
                 <p>Ensure you’re delivering the right features to the right customers by validating product concepts with your target audience.</p>
-                <div class="review-small-img flex">
-                    <img src="./assets/asset 25.png" alt="Chart Mogul">
-                </div>
-                <div class="review-text">Adopting UsabilityHub got us into the habit of asking our users questions before locking in decisions.</div>
-                <div class="person-desc flex">
-                    <div class="person-photo">
-                        <img src="./assets/asset 26.png" alt="Error">
+                <div class="review">
+
+                    <div class="review-small-img flex">
+                        <img src="./assets/asset 25.png" alt="Chart Mogul">
                     </div>
-                    <div class="person-prop flex">
-                        <h4>
-                            Rick van de Ven
-                        </h4>
-                        <p>Digital Marketing Analyst</p>
+                    <div class="review-text">Adopting UsabilityHub got us into the habit of asking our users questions before locking in decisions.</div>
+                    <div class="person-desc flex">
+                        <div class="person-photo">
+                            <img src="./assets/asset 26.png" alt="Error">
+                        </div>
+                        <div class="person-prop flex">
+                            <h4>
+                                Rick van de Ven
+                            </h4>
+                            <p>Digital Marketing Analyst</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -279,13 +290,21 @@
     
     <div class="sub-footer">
         <div class="container flex subfooter-container">
-            <a href="#" class="hover-link">Privacy policy</a>
-            <a href="#" class="hover-link">Terms & Condition</a>
-            <a href="#" class="hover-link">Security Information</a>
-            <a href="#" class="hover-link"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#" class="hover-link"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="hover-links">Privacy policy</a>
+            <a href="#" class="hover-links">Terms & Condition</a>
+            <a href="#" class="hover-links">Security Information</a>
+            <a href="#" class="hover-links"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="hover-links"><i class="fa-brands fa-twitter"></i></a>
         </div>
     </div>
     <script src="https://kit.fontawesome.com/eb1f225884.js" crossorigin="anonymous"></script>
+    <script>
+        const toggleButton = document.getElementById('nav-toggle');
+        const navLinks = document.getElementById('nav-links');
+        
+        toggleButton.addEventListener('click',() => {
+            navLinks.classList.toggle('active');
+        })
+    </script>
 </body>
 </html>

@@ -65,6 +65,7 @@ ul{
     color: white !important;
     padding: 12px 24px;
     box-shadow: 0 0 2px var(--secondary-text-color);
+    text-align: center;
 }
 
 .primary-button:hover{
@@ -103,6 +104,7 @@ ul{
 
 .container{
     max-width: 1300px;
+    overflow: hidden;
     /* It is used to give margin to both left and right simultaneously. */
     margin-inline: auto;
     padding-inline: var(--padding-inline-section);
@@ -122,6 +124,7 @@ ul{
 
 .main-nav{
     margin-top: 30px;
+    position: relative;
     justify-content: space-between;
 }
 
@@ -137,6 +140,10 @@ ul{
 .nav-links ul{
     justify-content: end;
     gap: 40px;
+}
+
+.nav-toggle{
+    display: none;
 }
 
 /* header section */
@@ -160,8 +167,7 @@ ul{
 
 .header-right img{
     margin-top: 75px;
-    width: 650px;
-    height: 470px;
+    width: 100%;
 }
 
 .header-section p{
@@ -184,8 +190,9 @@ ul{
 }
 
 .logos{     
-    justify-content: space-between; 
+    justify-content: space-evenly; 
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .logo{
@@ -209,6 +216,7 @@ ul{
 
 .features-header{
     text-align: center;
+    margin-bottom: 40px;
 }
 
 .features-header a{
@@ -224,7 +232,7 @@ ul{
     margin: 50px;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    gap: 40px;
+    gap: 20px;
 }
 
 .features-card{
@@ -248,8 +256,22 @@ ul{
     padding: 65px var(--padding-inline-section) 100px;
 }
 
+.big-feature-container:nth-child(2){
+    flex-direction: row-reverse;
+    gap: 40px; 
+    margin-top: 50px;
+}
+
+.big-feature-container:nth-child(3){
+    margin-top: 80px;
+}
+
+.features-desc-third{
+    height: 75vh;
+}
 .big-feature-container{
     padding-right: 0px;
+    margin-left: 100px;
     padding-left: 10px;
     gap: 100px;
     margin-left: 65px; 
@@ -260,7 +282,7 @@ ul{
 }
 
 .features-desc{
-    height: 60vh;
+    /* height: 60vh; */
     flex-direction: column;
     align-items: flex-start;
     gap: 15px;
@@ -276,7 +298,7 @@ ul{
 }
 
 .review-small-img img{
-    width: 43%;
+    width: 35%;
 }
 
 .review-text{
@@ -287,6 +309,7 @@ ul{
 }
 
 .person-desc{
+    margin-top: 13px;
     flex-direction: row;
     gap: 10px;
 }
@@ -309,6 +332,9 @@ ul{
 }
 /* examples section */
 
+.examples-area{
+    flex-wrap: wrap;
+}
 .examples-section{
     text-align: center;
 }
@@ -325,7 +351,7 @@ ul{
 .examples-card{
     width: 23%;
     position: relative;
-    min-height: 300px;
+    height: 300px;
     background: black;
     background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)), url(./assets/asset\ 34.jpeg);
     background-size: cover;
@@ -404,4 +430,5 @@ footer{
 .subfooter-container{
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
 }
