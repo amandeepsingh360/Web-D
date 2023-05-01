@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Dates</title>
+</head>
+<style>
+    .container{
+        border: 2px solid black;
+        height: 50px;
+        text-align: center;
+        padding-top: 15px;
+        background-color: cadetblue;
+        font-size: 30px;
+    }
+    #time{
+        font-weight: bold;
+    }
+</style>
+<body>
+    <div class="container">
+        Current time is <span id="time"></span>
+    </div>
+    <script>
+        console.log("This is date and time tutorial");
+        var dt = new Date();//constructor
+        console.log(dt);
+        var dt1 = new Date(0);//This is the reference time
+        console.log(dt1);
+        var dt2 = new Date(1000);//This is 1000milisec(1sec) after the reference time
+        console.log(dt2);
+
+        var newDate1=new Date("2029-03-30");
+        console.log(newDate1);
+
+        // var newDate2=new Date(year,month,date,hours,minutes,seconds,miliseconds);
+        // month is 0-indexed
+        var newDate2=new Date(3040,4,20,6,30,45);
+        console.log(newDate2);
+
+        var yr=newDate2.getFullYear();
+        console.log("The year is ",yr);
+
+        var month=newDate2.getMonth();
+        console.log("The month is ",month);
+        
+        var dat=newDate2.getDate();
+        console.log("The date is ",dat);
+        
+        var hr=newDate2.getHours();
+        console.log("The hour is ",hr);
+        
+        var min=newDate2.getMinutes();
+        console.log("The minutes is ",min);
+        
+        var sec=newDate2.getSeconds();
+        console.log("The seconds is ",sec);
+        
+        var msec=newDate2.getMilliseconds();
+        console.log("The milliseconds is ",msec);
+
+        // UTC->London time zone
+
+        newDate1.setDate(5);
+        console.log(newDate1);
+
+        // It goes aage
+        newDate1.setDate(32);
+        console.log(newDate1);
+
+        var timestamp=Date.now()//It is the time in miliseconds after creation of this constructor
+        console.log(timestamp);
+
+        setInterval(updateTime, 1000);
+
+        function updateTime(){
+            // tme=document.getElementById('time');
+            time.innerHTML=new Date();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Events</title>
+</head>
+<style>
+    #btn{
+        padding: 10px 34px;
+        background-color: red;
+        border: 2px solid black;
+        border-radius: 8px;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <!-- Browser Events:
+    Click(click any button)
+    contextmenu(When we click with right mouse)
+    mouseover(mouse element ke andar leke jana)/mouseout(mouse element ke bahar leke jana)
+    mousedown(Mouse button pressed)/mouseup(mouse button upar aaya)
+    mousemove
+
+    submit
+    focus
+
+    DOMContentLoaded
+
+    transitionend -->
+
+    <div class="container">
+        <h1>This is my heading</h1>
+        <p id="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum mollitia magnam eveniet repellat! Incidunt sit, nobis maxime culpa eius officiis quibusdam. A deleniti adipisci et, dolores sunt repellendus laudantium ducimus suscipit cum dicta eaque. Accusantium eaque natus, debitis doloribus consectetur alias, assumenda molestias explicabo ipsam cumque similique accusamus temporibus sint reprehenderit pariatur aliquid illum soluta velit, vero modi ducimus itaque amet? Magnam recusandae sint quisquam ratione, temporibus autem ab eius vitae nostrum sequi laboriosam, doloribus maxime quia consequatur earum asperiores cumque fuga. Recusandae beatae vero incidunt libero, quae totam quasi deleniti, veritatis est, reiciendis impedit doloremque quod quia nostrum distinctio.</p>
+    </div>
+    <button id="btn" onclick="toggleHide()">
+        Show/Hide
+    </button>
+    <script>
+        var para=document.getElementById('para');
+        para.addEventListener('mouseover',function run(){
+            console.log("Mouse in");
+        });
+        para.addEventListener('mouseout',function run(){
+            console.log("Mouse out");
+        });
+        function toggleHide(){
+            var btn=document.getElementById('btn');
+            var para=document.getElementById('para');
+            if(para.style.display!='none'){
+                para.style.display='none';
+            }
+            else{
+                para.style.display='block';
+            }
+        }
+    </script>
+</body>
+</html>
