@@ -9,7 +9,7 @@ generateBtn.addEventListener("click",()=>{
         return;
     }
     generateBtn.innerHTML="Generating QR Code...."
-    console.log(qrValue);
+    // console.log(qrValue);
     // used this api "https://goqr.me/api/"
     qrImg.src=`https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${qrValue}`;
     qrImg.addEventListener("load",()=>{ //After loading of page
