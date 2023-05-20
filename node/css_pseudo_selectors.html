@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo Selectors</title>
+    <style>
+        .container{
+            background-color: rgb(230, 206, 210);
+            border: 3px solid red;
+            margin : 15px  auto;
+            width:800px;
+            padding: 15px;
+        }
+        a{
+            text-decoration: none;
+            color:black;
+        }
+        /* when we hover on our button, this will happen */
+        a:hover{
+            background-color: rgb(174, 233, 233);
+        }
+        /* after visiting the link, the button will appear like this */
+        a:visited{
+            background-color: rgb(219, 166, 219);
+        }
+        /* when we click the link, then it will appear like this */
+        a:active{
+            background-color: rgb(123, 123, 221);
+        }
+        .btn{
+            background-color: aqua;
+            border: none;
+            padding: 5px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit illo quas maiores modi unde praesentium quibusdam, facere et autem cum rerum at ut pariatur? Velit, ducimus. Consequuntur, tempora. Inventore, fugit?</p>
+        <a href="https://www.google.com/" target="_blank" class="btn">Read more</a>
+        <button class="btn">Contact Us</button>
+    </div>
+</body>
+</html>
